@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom"
 export default function SignUp() {
    const navigate = useNavigate()
   return (
-    <div className="min-h-screen w-full flex flex-col">
+    <div className="min-h-screen w-full flex flex-col px-5">
       {/* ✅ Header */}
       <header className="w-full flex items-center justify-between bg-[#021427] shadow px-2 sm:px-4 py-2 sm:py-3">
         {/* Logo */}
