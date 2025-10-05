@@ -1,9 +1,9 @@
 import {
-  Badge,
+
   CheckCircle,
   Clock,
   Package,
-  ShoppingCart,
+ 
   TrendingUp,
   XCircle,
 } from "lucide-react";
@@ -14,7 +14,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../../components/ui/card";
-import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
+
 import { useNavigate } from "react-router-dom";
 type Customer = {
   name: string;
