@@ -9,9 +9,9 @@ export default function AboutPage() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 px-10">
+    <div className="min-h-screen flex flex-col bg-gray-50 sm:px-10 px-3">
       {/* Navbar */}
-      <header className="w- bg-[#0d1b2a] text-white shadow-md px- ">
+      <header className="w- bg-[#021427] text-white shadow-md px- ">
         <div className="max-w-7xl mx-auto flex flex-row justify-between items-center px- py-4">
          <div className="flex  flex-row items-center gap-3 justify-center ">
           <div><img className="w-6" src="shirt.svg" alt="" />
@@ -39,7 +39,7 @@ export default function AboutPage() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden"
+            className="md:hidden bg-[#021427]"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <Menu className="w-6 h-6" />
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
         {/* Mobile Dropdown */}
         {menuOpen && (
-          <nav className="md:hidden bg-[#1a2b3c] flex flex-col px-6 py-4 space-y-2">
+          <nav className="md:hidden bg-[#021427] flex flex-col sm:px-6 px-3 py-4 space-y-2">
             <Button variant="ghost" className="text-white font-bold justify-start">
               Home
             </Button>
@@ -135,7 +135,7 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0d1b2a] text-white py-10 mt-10">
+      <footer className="bg-[#0d1b2a] text-white py-10 px-5 mt-10">
         <div className="max-w-6xl mx-auto px- grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex flex-row gap-3  items-center mb-5 ">
