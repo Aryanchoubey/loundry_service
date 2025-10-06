@@ -13,23 +13,22 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* ✅ Define routes */}
+        {/* ✅ Root route → Home Page */}
+        <Route path="/" element={<Home />} />
+        
         <Route path="signup" element={<SignUp />} />
         <Route path="profilepage" element={<ProfilePage />} />
         <Route path="login" element={<LogIn />} />
-        <Route path="home" element={<Home />} />
-        <Route path="/" element={<Home />} />
         <Route path="userdashboard" element={<UserDashboard />} />
         <Route path="trackorder" element={<TrackOrder />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="order" element={<OrderPage />} />
         <Route path="paymentpage" element={<PaymentPage />} />
-        
-        
       </Routes>
     </Router>
   )
 }
 
 export default App
+
 

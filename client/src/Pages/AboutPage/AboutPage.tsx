@@ -4,8 +4,10 @@ import { Card, CardContent } from "../../components/ui/card"
 import { Button } from "../../components/ui/button"
 import { Truck, Clock, ShieldCheck, Menu } from "lucide-react"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function AboutPage() {
+  const naviagte = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
@@ -26,13 +28,15 @@ export default function AboutPage() {
             <Button variant="ghost" className="text-white font-bold hover:text-teal-400">
               Home
             </Button>
-            <Button variant="ghost" className="text-teal-400">
+            <Button variant="ghost" className="text-teal-400 font-bold">
               About
             </Button>
             <Button variant="ghost" className="text-white font-bold hover:text-teal-400">
               Place Order
             </Button>
-            <Button variant="ghost" className="text-white font-bold hover:text-teal-400">
+            <Button
+            onClick={()=>naviagte("/trackorder")}
+             variant="ghost" className="text-white font-bold hover:text-teal-400">
               Track Order
             </Button>
           </nav>
